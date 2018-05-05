@@ -1,0 +1,50 @@
+
+<app-page-header [heading]="'Market sumary'" [icon]="'fa-bar-chart-o'"></app-page-header>
+
+<br>
+
+<br>
+<h2 class="text-muted">Value Of {{name}}</h2>
+<button type="button" class="btn btn-lg btn-primary"(click)=" bid1()">Bid</button>
+<button type="button" class="btn btn-lg btn-info"(click)=" Ask()">Ask</button>
+<button type="button" class="btn btn-lg btn-success"(click)=" mvalue()">Market value</button>
+<button type="button" class="btn btn-lg btn-warning"(click)="spread()">Spread</button>
+    <div [chart]="chart2" ></div>
+<br>
+<hr>
+<br>
+<h2 class="text-muted">Change of Spread over time</h2>
+<div [chart]="chart1 " ></div>
+
+<br>
+<hr>
+<br>
+
+<h1>Market sumary table</h1><br><br>
+<table>
+
+    <tr>
+        <th>Company Name</th>
+        <th>Date</th>
+        <th>Close</th>
+        <th>Volume</th>
+        <th>Base Volume</th>
+    </tr>
+
+
+    <tr *ngFor="let getmarket of getmarkets">
+        <td>  <button type="button" class="btn btn-sm btn-link" (click)=" link(getmarket.mname)">{{getmarket.mname}}</button></td>
+
+        <td>{{getmarket.date}}</td>
+        <td>{{getmarket.last}}</td>
+        <td>{{getmarket.Volume}}</td>
+        <td>{{getmarket.BaseVolume}}</td>
+    </tr>
+
+
+
+</table>
+
+
+
+<hr>

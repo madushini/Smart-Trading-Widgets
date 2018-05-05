@@ -1,0 +1,37 @@
+<div>
+
+    <h4>Edit email</h4>
+</div>
+
+
+<div class="card-footer">
+    <div class="input-group">
+        <input type="text" name="email" [(ngModel)]="email" class="form-control input-underline input-lg" id="" placeholder="Enter email">
+        <span class="input-group-btn">
+                <button class="btn btn-warning btn-sm" id="btn-chat"(click)="editemail()">
+                    Edit
+                </button>
+            </span>
+    </div>
+</div>
+<div>
+
+    <h4>Edit password</h4>
+</div>
+
+<div class="card-footer">
+    <div class="input-group">
+        <input type="password" name="password" [(ngModel)]="password" class="form-control input-underline input-lg" id="" placeholder="Enter password ( At least eight characters ,one number,one lowercase and one uppercase letter)">
+
+    </div>
+</div>
+<div class="card-footer">
+    <div class="input-group">
+        <input type="password" name="repassword" [(ngModel)]="repassword" class="form-control input-underline input-lg" id="" placeholder="Re-Enter password">
+        <span class="input-group-btn">
+                <button class="btn btn-warning btn-sm" id="btn-chat"(click)="editpassword()">
+                    Edit
+                </button>
+            </span>
+    </div>
+</div>

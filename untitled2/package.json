@@ -1,0 +1,30 @@
+{
+  "name": "untitled2",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "sajith udara",
+  "license": "ISC",
+  "dependencies": {
+    "angular-highcharts": "^4.0.7",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "highcharts": "^6.0.3",
+    "jsonwebtoken": "^7.4.3",
+    "mongoose": "^4.11.9",
+    "mongoose-unique-validator": "^2.0.0",
+    "node-bittrex-api": "^0.8.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.0",
+    "plotly.js": "^1.31.2"
+  },
+  "devDependencies": {
+    "@types/highcharts": "^5.0.12"
+  },
+  "description": ""
+}

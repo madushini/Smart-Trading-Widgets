@@ -1,0 +1,139 @@
+<div [@routerTransition]>
+
+
+    <app-page-header [heading]="'Trade Markets'" [icon]="'fa-bar-chart-o'"></app-page-header>
+
+    <div class="row">
+        <div class="col col-sm-4">
+            <div class="card mb-4">
+                <div class="card-header">
+
+
+                    <button type="button" class="btn btn-sm btn-link" (click)=" goto1(m1)">{{m1}}</button>
+                    <button type="button" class="btn btn-sm btn-success"(click)="af1(m1)">Add favourite</button>
+                </div>
+                <div >
+
+                    <div [chart]="market1 " style="min-width: 200px; height: 200px; max-width: 800px; margin: 0 auto"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <button  type="button" class="btn btn-sm btn-link" (click)=" goto1(m2)">{{m2}}</button>
+                    <button type="button" class="btn btn-sm btn-success" style="alignment: right" (click)="af2(m2)">Add favourite</button>
+                </div>
+                <div >
+                    <div [chart]="market2" style="min-width: 200px; height: 200px; max-width: 800px; margin: 0 auto"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <button  type="button" class="btn btn-sm btn-link" (click)=" goto1(m3)">{{m3}}</button>
+                    <button type="button" class="btn btn-sm btn-success"(click)="af3(m3)">Add favourite</button>
+                </div>
+                <div >
+                    <div [chart]="market3" style="min-width: 200px; height: 200px; max-width: 800px; margin: 0 auto" ></div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="row">
+        <div class="col col-sm-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <button  type="button" class="btn btn-sm btn-link" (click)=" goto1(m4)">{{m4}}</button>
+                    <button type="button" class="btn btn-sm btn-success"(click)="af4(m4)">Add favourite</button>
+                </div>
+                <div >
+                    <div [chart]="market4 " style="min-width: 200px; height: 200px; max-width: 800px; margin: 0 auto"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <button  type="button" class="btn btn-sm btn-link" (click)=" goto1(m5)">{{m5}}</button>
+                    <button type="button" class="btn btn-sm btn-success"(click)="af5(m5)">Add favourite</button>
+                </div>
+                <div >
+                    <div [chart]="market5" style="min-width: 200px; height: 200px; max-width: 800px; margin: 0 auto"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <button  type="button" class="btn btn-sm btn-link" (click)=" goto1(m6)">{{m6}}</button>
+                    <button type="button" class="btn btn-sm btn-success"(click)="af1(m6)">Add favourite</button>
+                </div>
+                <div >
+                    <div [chart]="market6" style="min-width: 200px; height: 200px; max-width: 800px; margin: 0 auto" ></div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col col-sm-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <button  type="button" class="btn btn-sm btn-link" (click)=" goto1(m7)">{{m7}}</button>
+                    <button type="button" class="btn btn-sm btn-success"(click)="af7(m7)">Add favourite</button>
+
+
+                </div>
+                <div >
+                    <div [chart]="market7 " style="min-width: 200px; height: 200px; max-width: 800px; margin: 0 auto"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <button  type="button" class="btn btn-sm btn-link" (click)=" goto1(m8)">{{m8}}</button>
+                    <button type="button" class="btn btn-sm btn-success"(click)="af8(m8)">Add favourite</button>
+                </div>
+                <div >
+                    <div [chart]="market8" style="min-width: 200px; height: 200px; max-width: 800px; margin: 0 auto"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <button  type="button" class="btn btn-sm btn-link" (click)=" goto1(m9)">{{m9}}</button>
+                    <button type="button" class="btn btn-sm btn-success"(click)="af9(m9)">Add favourite</button>
+                </div>
+                <div >
+                    <div [chart]="market9" style="min-width: 200px; height: 200px; max-width: 800px; margin: 0 auto" ></div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

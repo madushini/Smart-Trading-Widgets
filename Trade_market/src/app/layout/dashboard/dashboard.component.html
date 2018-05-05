@@ -1,0 +1,108 @@
+<div [@routerTransition]>
+    <h2 class="text-muted">Profile </h2>
+    <div class="row">
+        <div class="col-md-12">
+            <ngb-carousel>
+                <ng-template ngbSlide *ngFor="let slider of sliders">
+                    <img class="img-fluid mx-auto d-block" [src]="slider.imagePath" alt="Random first slide" width="100%">
+                    <div class="carousel-caption">
+                        <h3>{{name}} {{username}}</h3>
+
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+    <hr>
+
+
+
+
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card card-default">
+                <div class="card-header">
+                    <i ></i><strong> About</strong>
+                </div>
+                <!-- /.card-header -->
+<br>
+                <div class="alert alert-success">
+                   First name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>{{name}}</strong>
+                </div>
+                <br>
+                <div class="alert alert-info">
+                    Last name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>{{username}}</strong>
+                </div>
+                <br>
+                <div class="alert alert-danger">
+                    &nbsp;&nbsp;Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>{{Email}}</strong>
+                </div>
+                <br>
+                <!-- /.card-body -->
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card card-default">
+                <div class="card-header">
+                    <i class="fa fa-bell fa-fw"></i>Value of Bit COIN(฿)
+                </div>
+                <div class="card-block">
+                    <div class="list-group">
+
+                        <a  class="list-group-item clearfix d-block">
+                            <i class="fa fa-money fa-fw"></i> USD : {{ul}}{{us}}
+
+                        </a>
+                        <a  class="list-group-item clearfix d-block">
+                            <i class="fa fa-money fa-fw"></i> EUR : {{el}}{{es}}
+
+                        </a>
+                        <a  class="list-group-item clearfix d-block">
+                            <i class="fa fa-money fa-fw"></i> JPY : {{jl}}{{js}}
+
+                        </a>
+                        <a  class="list-group-item clearfix d-block">
+                            <i class="fa fa-money fa-fw"></i> CSN : {{cl}}{{cs}}
+
+                        </a>
+                        <a  class="list-group-item clearfix d-block">
+                            <i class="fa fa-money fa-fw"></i>AUD: {{al}}{{ass}}
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /.col-lg-4 -->
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <h1>Watch List</h1><h2 class="text-muted"> </h2>
+</div>
+<button type="button" class="btn btn-sm btn-link" (click)="click()">click</button>
+
+<table>
+
+    <tr>
+        <th>Company Name</th>
+        <th>Event</th>
+
+    </tr>
+
+
+    <tr *ngFor="let getmarket of getmarkets">
+        <td>  <button type="button" class="btn btn-sm btn-link" (click)=" link(getmarket.mname)">{{getmarket.mname}}</button></td>
+
+        <td><button type="button" class="btn btn-sm btn-danger"(click)="clear(getmarket.mname)">delete</button></td>
+
+        </tr>
+
+
+
+</table>

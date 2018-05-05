@@ -1,0 +1,24 @@
+hr {
+    display: block;
+    border-color: cornflowerblue;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th,tr {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
